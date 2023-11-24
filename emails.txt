@@ -1,1 +1,1 @@
-<list email addressesg>
+<list email addresses here>

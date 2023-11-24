@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secrets Share</title>
+</head>
+<body>
+    <h2>Secrets Share</h2>
+    <form action="/submit_secrets" method="post">
+        <label for="emails">Select Emails:</label><br>
+        <select id="emails" name="emails" multiple>
+            {% for email in emails %}
+                <option value="{{ email }}">{{ email }}</option>
+            {% endfor %}
+        </select><br><br>
+        <label for="secret">My secret:</label><br>
+        <textarea id="secret" name="secret" rows="4" cols="50" placeholder="put you secrets here"></textarea><br><br>
+        <input type="submit" value="Generate">
+    </form>
+    <div id="314"/>
+</body>
+</html>
